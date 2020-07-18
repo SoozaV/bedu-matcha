@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matcha</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="cabecera">
+      <img src="img/logo.svg" alt="Matcha">
+      <nav id="nav">
+        <a href="#">Plataforma</a>
+        <a href="#">Precios</a>
+        <a href="#">Clientes</a>
+        <a href="#">Recursos</a>
+        <a href="#">Nosotros</a>
+      </nav>
+      <div class="login" id="login">
+        <a href="#">Ingresar</a>
+        <a href="#" class="prueba">Prueba Gratis</a>
+      </div>
+      <a id="btn-menu"><img src="img/menu.png" alt=""></a>
+    </header>
+    <section class="principal">
+      <h1>Build your blog. Build your business.</h1>
+      <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
+      <div class="formulario">
+        <form>
+          <input type="text" name="formulario" placeholder="Ingresa tu email">
+          <input type="submit" name="" value="Pruébalo ahora">
+        </form>
+      </div>
+      <div class="form-box">
+        <p>Start publishing today with a free 7-day trial.<br>No credit card required.</p>
+      </div>
+      <img class="capterra" src="img/capterra.png" alt="Capterra">
+      <img src="img/intro_group_image.png" alt="">
+    </section>
+    <section class="promo">
+      <div class="video">
+        <video controls="" poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg">
+          <source type="video/webm" src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.webm">
+          <source type="video/mp4" src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
+        </video>
+        <img src="img/see_how_it_works.png" alt="Cómo funciona Matcha">
+      </div>
+      <div class="">
+        <h2>Publish to your blog in minutes, not hours.</h2>
+        <p>Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
+        <p class="now">Start publishing now:</p>
+        <div class="formulario">
+          <form>
+            <input type="text" name="formulario" placeholder="Ingresa tu email">
+            <input type="submit" name="" value="Pruébalo ahora">
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      var boton = document.getElementById('btn-menu');
+      var nav = document.getElementById('nav');
+      var login = document.getElementById('login');
+
+      function mostrar(){
+
+          nav.classList.toggle("mostrar");
+          login.classList.toggle("mostrar");
+
+      }
+
+      boton.addEventListener("click", mostrar);
+
+    </script>
+  </body>
+</html>
